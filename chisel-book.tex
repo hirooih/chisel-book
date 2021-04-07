@@ -2219,7 +2219,7 @@ dedicated enable input, and no additional resources are needed.
 Figure~\ref{fig:register-en-wave} shows an example waveform for a register
 with enable. Most of the time, \code{enable} is high (\code{true}) and the register
 follows the input with one clock cycle delay. Only in the fourth clock cycle
-\code{enable} is low, and the register keeps its value (5) at rising edge D.
+\code{enable} is low (\code{false}), and the register keeps its value (5) at rising edge D.
 
 A register with an enable can be described in a few lines of Chisel code
 with a conditional update:
