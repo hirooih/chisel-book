@@ -903,14 +903,14 @@ the output of the register can be used just with the name in an expression:
   \label{fig:register-reset-0}
 \end{figure}
 
-\noindent A register can also be connected to its input at the definition:
-
-\shortlist{code/reg_next.txt}
-
 Figure~\ref{fig:register-reset-0} shows the circuit of our register definition with
 a clock, a synchronous reset to \code{0.U}, input \code{d}, and output \code{q}.
 The global signals \code{clock} and \code{reset} are implicitly connected to
 each register defined.
+
+\noindent A register can also be connected to its input at the definition:
+
+\shortlist{code/reg_next.txt}
 
 \noindent A register can also be connected to its input and a constant as
 initial value at the definition:
